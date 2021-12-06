@@ -50,7 +50,6 @@ nav {
     justify-content: space-between;
     font-size: 24px;
     font-weight: 700;
-
 }
 
 #navlinks a {
@@ -60,6 +59,23 @@ nav {
 
 #navlinks a:hover {
     text-decoration: underline;
+}
+
+#navburger {
+    display: none;
+    height: 66px;
+    width: 66px;
+}
+
+.burgerline {
+    height: 8px;
+    background-color: #5F443A;
+    margin-top: 8px;
+    margin-right: 20%;
+}
+
+.burgerline:first-child {
+    margin-top: 0;
 }
 
 .banner {
@@ -105,7 +121,7 @@ nav {
 }
 
 .behandlingertekst>*, .infotekst>*, .omkringtekst>* {
-    margin: 0% 8%;
+    margin: 0 8%;
 }
 
 .behandlingerbanner, .omkringbanner {
@@ -139,7 +155,7 @@ nav {
 
 .divider {
     background-color: #8C6F66;
-    min-height: 180px;
+    min-height: 160px;
     color: #e2e2e2;
     text-align: center;
 }
@@ -231,6 +247,7 @@ h3 {
 
 #priserdisclaimer {
     padding: 0 0 4%;
+    text-align: center;
 }
 
 #priser, #hover {
@@ -342,7 +359,80 @@ h3 {
     text-align: center;
 }
 
+.altcolor {
+    background-color: #D9CEC3;
+    text-align: center;
+    padding: 2% 0;
+}
 
+.erfaringpunkt {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1080px;
+    align-items: center;
+}
+
+.reversed {
+    direction: rtl;
+}
+
+.erfaringtekst, .erfaringdato {
+    flex: 1;
+    padding: 2%;
+}
+
+.erfaringtekst {
+    background-color: #E2E2E2;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+.erfaringdato {
+    text-align: start;
+}
+
+.erfaringikon {
+    background-image: url("../img/icons/calendar.png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #e2e2e2;
+    border-radius: 30px;
+    height: 60px;
+    width: 60px;
+    margin: 2%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    padding: 0;
+}
+
+#booking {
+    margin: 0 auto;
+    max-width: 1080px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#booking aside {
+    text-align: start;
+    flex-direction: column;
+    display: flex;
+}
+
+#booking aside input {
+    padding: 5%;
+    width: 100%;
+    flex-grow: 1;
+}
+
+#booking aside label {
+    font-size: 24px;
+}
+
+#booking aside textarea {
+    resize: none;
+}
 
 .btn {
     border-radius: 10px;
@@ -383,6 +473,7 @@ footer {
 .footertop p:first-child, .footertop p:last-child {
     font-size: 24px;
     flex: 1;
+    align-self: flex-end;
 }
 
 .footermiddle, .footerbottom {
@@ -405,4 +496,222 @@ footer {
 .footerbottom img {
     height: 64px;
     object-fit: contain;
+}
+
+@media only screen and (max-width: 1024px) {
+    #navburger {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .footertop {
+        display: block;
+        text-align: center;
+    }
+
+    .footertop p:last-child {
+        display: none;
+    }
+
+    .footermiddle {
+        display: block;
+    }
+
+    .footermiddle>* {
+        text-align: center;
+        margin-top: 2%;
+    }
+
+    .footermiddle p:last-child {
+        text-align: center;
+    }
+
+    .footerbottom {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .SoMebuttons {
+        margin: 0 auto;
+    }
+
+    #navlinks {
+        display: none;
+    }
+
+    .erfaringdato {
+        flex: 0;
+    }
+
+    .erfaringikon {
+        order: 1;
+    }
+
+    .erfaringtekst {
+        margin: 2%;
+        border-radius: 10px;
+    }
+
+    .choices aside:first-child {
+        margin: 4%;
+    }
+
+    .choices aside:last-child {
+        margin: 4%;
+    }
+
+    .reversed {
+        direction: initial;
+    }
+
+    #quote h2 {
+        width: 90%;
+    }
+
+    #danskpsyk h2 {
+        width: 90%;
+    }
+
+    .centercontent {
+        width: 90%;
+    }
+
+    #hover aside {
+        margin: 6%;
+    }
+
+    .segment {
+        display: block;
+    }
+
+    #priser aside {
+        margin: 4%;
+    }
+
+    .footercontent {
+        padding: 6% 0;
+    }
+
+    .infotekst {
+        padding: 6% 0;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+    .banner {
+        background-attachment: inherit;
+        min-height: 300px;
+    }
+
+    .footercontent {
+        padding: 10% 0;
+    }
+
+    .divider {
+        min-height: 100px;
+    }
+
+    .dividercontent {
+        padding: 4%;
+    }
+
+    .divider h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    #quote h2 {
+        font-size: 24px;
+        width: 90%;
+    }
+
+    .buttons {
+        padding: 5% 0;
+    }
+
+    .btn {
+        font-size: 24px;
+    }
+
+    .introduction {
+        display: inline-flex;
+    }
+
+    .behandlingertop, .infotop, .omkringtop {
+        display: block;
+    }
+
+    .behandlingerbanner, .omkringbanner, .infobanner {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .omkringtekst {
+        width: 100%;
+        min-height: 100px;
+        margin: 0;
+        text-align: center;
+    }
+
+    .behandlingertekst, .infotekst {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .behandlingertekst>*, .infotekst>*, .omkringtekst>* {
+        margin: 0 6%;
+    }
+
+    .behandlingerbanner {
+        margin-top: 0;
+    }
+
+    .introduction aside {
+        background-color: inherit;
+        width: 100%;
+        margin: 0;
+        padding: 6%;
+    }
+
+    .choices aside {
+        margin: 4%;
+    }
+
+    #middlechoice {
+        margin: inherit;
+    }
+
+    #danskpsyk h2 {
+        width: 100%;
+        padding: 6%;
+        font-size: 24px;
+    }
+
+    .erfaringikon {
+        display: none;
+    }
+
+    .erfaringpunkt {
+        display: grid;
+    }
+
+    .erfaringdato {
+        order: -1;
+        text-align: center;
+    }
+
+    #danskpsykcontent p {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .lektioner {
+        font-size: 20px;
+    }
+
 }

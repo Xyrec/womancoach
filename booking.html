@@ -24,6 +24,13 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="info.html">Information</a></li>
             </ul>
+            <a href="#dropdown">
+                <div id="navburger">
+                    <div class="burgerline"></div>
+                    <div class="burgerline"></div>
+                    <div class="burgerline"></div>
+                </div>
+            </a>
         </div>
     </nav>
     <section class="banner"></section>
@@ -33,10 +40,29 @@
     <main>
         <section class="centercontent">
             <h2>Klar til at finde vejen til en bedre hverdag?</h2>
-            <p>Book en tid og lad mig hjælpe dig i mål - vælg blot en dato og et klokkeslæt, så kontakter jeg dig snarest muligt, så vi kan få aftalt det endelige tidspunkt.</p>
+            <p>Book en tid og lad mig hjælpe dig i mål - vælg blot en dato og et klokkeslæt, så kontakter jeg dig
+                snarest muligt, så vi kan få aftalt det endelige tidspunkt.</p>
         </section>
-        <section class="booking"></section>
     </main>
+    <section class="altcolor">
+        <form id="booking">
+            <aside>
+                <label for="bookingName">Navn</label>
+                <input id="bookingName" type="text" required />
+                <label for="bookingEmail">E-mail</label>
+                <input id="bookingEmail" type="email" required />
+                <label for="bookingTele">Telefon</label>
+                <input id="bookingTele" type="tel" required />
+            </aside>
+            <aside>
+                <label for="bookingComment">Kommentar</label>
+                <textarea id="bookingComment" name="bookingComment"></textarea>
+            </aside>
+        </form>
+        <div class="buttons">
+            <a class="btn">Book nu</a>
+        </div>
+    </section>
     <footer>
         <div class="footercontent">
             <div class="footertop">
