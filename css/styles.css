@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+/* 
+    font-family: 'Lato', sans-serif;
+    font-family: 'Lora', serif; 
+*/
+
+body {
+    background-color: #F5EDE9;
+    font-family: 'Lato', sans-serif;
+    color: #5f443a;
+}
+
+main {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 120%;
+}
+
+nav {
+    background-color: #feeee9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid#c4b5b1;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    z-index: 100;
+}
+
+#navbar {
+    height: 110px;
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-family: 'Lora', serif;
+    font-size: 36px;
+}
+
+#navlinks {
+    display: inline-flex;
+    width: 70%;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+#navlinks a {
+    text-decoration: none;
+    color: #5f443a;
+}
+
+#navlinks a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    z-index: 99;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/banner.jpg");
+    min-height: 600px;
+    margin-top: 110px;
+}
+
+.behandlingertop, .infotop, .omkringtop {
+    display: flex;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.behandlingertekst {
+    width: 50%;
+    margin-top: 110px;
+    min-height: 500px;
+    background-color: #8C6F66;
+    color: #e2e2e2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.omkringtekst {
+    width: 50%;
+    margin-top: 110px;
+    min-height: 500px;
+    background-color: #F5EDE9;
+    color: #5f443a;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}
+
+.behandlingertekst>*, .infotekst>*, .omkringtekst>* {
+    margin: 0% 8%;
+}
+
+.behandlingerbanner, .omkringbanner {
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/banner.jpg");
+    margin-top: 110px;
+    min-height: 500px;
+}
+
+.infotekst {
+    width: 50%;
+    min-height: 400px;
+    background-color: #8C6F66;
+    color: #e2e2e2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.infobanner {
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/banner.jpg");
+    min-height: 400px;
+}
+
+.divider {
+    background-color: #8C6F66;
+    min-height: 180px;
+    color: #e2e2e2;
+    text-align: center;
+}
+
+.divider h1 {
+    font-family: 'Lora', serif;
+    font-size: 48px;
+}
+
+.divider h2 {
+    padding: 0;
+}
+
+#quote h2 {
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    width: 66%;
+    padding: 2% 0;
+    font-weight: 400;
+    line-height: 130%;
+    font-style: italic;
+}
+
+#danskpsyk h2 {
+    font-family: 'Lora', serif;
+    font-size: 30px;
+    width: 66%;
+    padding: 2% 0;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+#danskpsykcontent p {
+    font-size: 24px;
+    padding: 2% 0;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#danskpsykcontent img {
+    display: block;
+    margin: 0 auto;
+}
+
+.lektioner {
+    font-size: 24px;
+    padding: 2% 0;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.lektioner ul {
+    display: inline-block;
+    text-align: left;
+    list-style: disc;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.segment {
+    display: flex;
+}
+
+.segment>* {
+    display: block;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 2%;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 2%;
+}
+
+#middlechoice {
+    margin: 4% 0;
+}
+
+#priserdisclaimer {
+    padding: 0 0 4%;
+}
+
+#priser, #hover {
+    text-align: center;
+}
+
+#priser aside {
+    background-color: #D9CEC3;
+    padding: 6% 2%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+#priser aside>* {
+    margin-top: 5%;
+}
+
+#priser p {
+    font-size: 20px;
+}
+
+#hover aside {
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    background-image: url("../img/temp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    height: 200px;
+    margin-top: 0;
+}
+
+#hover aside:hover {
+    transform: scale(1.1);
+    transition: all 0.4s ease;
+}
+
+.choices aside {
+    padding: 2%;
+    margin: 4% 8%;
+    flex: 1 1 0px;
+}
+
+.choices aside>* {
+    display: block;
+}
+
+.choices aside:first-child {
+    margin-right: 4%;
+}
+
+.choices aside:last-child {
+    margin-left: 4%;
+}
+
+.choices img {
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.border>aside {
+    border: 1px solid #5f443a;
+}
+
+.notopspacing>aside {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.readmore {
+    text-decoration: none;
+    font-size: 24px;
+    color: #5f443a;
+    font-weight: 700;
+    padding-top: 2%;
+}
+
+.introduction {
+    background-image: url("../img/banner.jpg");
+    height: 375px;
+    display: flex;
+    justify-content: end;
+}
+
+.introduction aside {
+    background-color: rgba(245, 237, 233, 0.80);
+    width: 40%;
+    margin: 5% 7%;
+    padding: 2%;
+    margin-left: 0;
+}
+
+.buttons {
+    padding: 3% 0 1%;
+}
+
+.dividercontent {
+    padding: 2%;
+}
+
+.centercontent {
+    width: 60%;
+    margin: 0 auto;
+    padding: 4% 0;
+}
+
+.centercontent h2 {
+    text-align: center;
+}
+
+
+
+.btn {
+    border-radius: 10px;
+    font-family: 'Lato', sans-serif;
+    color: #5f443a;
+    font-size: 30px;
+    background: #DDC7B2;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 2%;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #a7927d;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #372D29;
+    color: #e2e2e2;
+}
+
+.footercontent {
+    margin: 0 auto;
+    padding: 4% 0;
+    max-width: 1080px;
+}
+
+.footertop {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.footertop p:first-child, .footertop p:last-child {
+    font-size: 24px;
+    flex: 1;
+}
+
+.footermiddle, .footerbottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footertop p:last-child, .footermiddle p:last-child {
+    text-align: end;
+}
+
+.footermiddle p:first-child, .footermiddle p:last-child {
+    flex: 1;
+}
+
+.footerbottom {
+    padding-top: 1%;
+}
+
+.footerbottom img {
+    height: 64px;
+    object-fit: contain;
+}
