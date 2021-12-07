@@ -11,7 +11,7 @@ body {
 }
 
 main {
-    max-width: 1080px;
+    /* max-width: 1080px; */
     margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@ nav {
 
 #navbar {
     height: 110px;
-    max-width: 1080px;
+    /* max-width: 1080px; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -92,7 +92,7 @@ nav {
 
 .behandlingertop, .infotop, .omkringtop {
     display: flex;
-    max-width: 1080px;
+    /* max-width: 1080px; */
     margin: 0 auto;
 }
 
@@ -713,5 +713,4 @@ footer {
     .lektioner {
         font-size: 20px;
     }
-
 }
