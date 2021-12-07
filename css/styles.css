@@ -31,12 +31,13 @@ nav {
 }
 
 #navbar {
-    height: 110px;
+    height: 80px;
     /* max-width: 1080px; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
 }
 
 #logo {
@@ -46,10 +47,14 @@ nav {
 
 #navlinks {
     display: inline-flex;
-    width: 70%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: flex-end;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 400;
+}
+
+#navlinks li {
+    margin-left: 4%;
 }
 
 #navlinks a {
@@ -68,10 +73,9 @@ nav {
 }
 
 .burgerline {
-    height: 8px;
+    height: 6px;
     background-color: #5F443A;
     margin-top: 8px;
-    margin-right: 20%;
 }
 
 .burgerline:first-child {
@@ -87,7 +91,7 @@ nav {
     background-size: cover;
     background-image: url("../img/banner.jpg");
     min-height: 600px;
-    margin-top: 110px;
+    margin-top: 80px;
 }
 
 .behandlingertop, .infotop, .omkringtop {
@@ -98,7 +102,7 @@ nav {
 
 .behandlingertekst {
     width: 50%;
-    margin-top: 110px;
+    margin-top: 80px;
     min-height: 500px;
     background-color: #8C6F66;
     color: #e2e2e2;
@@ -109,7 +113,7 @@ nav {
 
 .omkringtekst {
     width: 50%;
-    margin-top: 110px;
+    margin-top: 80px;
     min-height: 500px;
     background-color: #F5EDE9;
     color: #5f443a;
@@ -130,7 +134,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../img/banner.jpg");
-    margin-top: 110px;
+    margin-top: 80px;
     min-height: 500px;
 }
 
