@@ -102,6 +102,10 @@ nav {
     background-image: url("../img/kontakt-banner.jpg");
 }
 
+#booking-banner {
+    background-image: url("../img/booking-banner.jpg");
+}
+
 .behandlingertop, .infotop, .omkringtop {
     display: flex;
     /* max-width: 1080px; */
@@ -465,20 +469,23 @@ h3 {
 #booking {
     margin: 0 auto;
     max-width: 1080px;
-    display: flex;
     justify-content: space-evenly;
 }
 
 #booking aside {
     text-align: start;
     flex-direction: column;
-    display: flex;
+    display: inline-flex;
 }
 
 #booking aside input {
-    padding: 5%;
     width: 100%;
-    flex-grow: 1;
+    width: 300px;
+    margin: 1% 0;
+    height: 40px;
+    font-size: 18px;
+    color: #5F443A;
+    font-family: 'Lato', sans-serif;
 }
 
 #booking aside label {
@@ -487,6 +494,21 @@ h3 {
 
 #booking aside textarea {
     resize: none;
+    height: 191px;
+    width: 300px;
+    margin: 1% 0;
+    font-size: 18px;
+    color: #5F443A;
+    font-family: 'Lato', sans-serif;
+}
+
+#booking .btn {
+    background-color: #8C6F66;
+    color: #e2e2e2;
+}
+
+#booking .btn:hover {
+    background-color: #74584e;
 }
 
 .btn {
@@ -534,6 +556,7 @@ footer {
 .footermiddle, .footerbottom {
     display: flex;
     justify-content: space-between;
+    padding-top: 1%;
 }
 
 .footertop p:last-child, .footermiddle p:last-child {
@@ -542,10 +565,6 @@ footer {
 
 .footermiddle p:first-child, .footermiddle p:last-child {
     flex: 1;
-}
-
-.footerbottom {
-    padding-top: 1%;
 }
 
 .footerbottom img {
@@ -736,14 +755,23 @@ footer {
 
     .introduction {
         display: inline-flex;
+        height: 750px;
+        background-position: 30%;
     }
-
 
     .introduction aside {
         background-color: inherit;
         width: 100%;
         margin: 0;
         padding: 6%;
+        justify-content: end;
+
+    }
+
+    .introduction aside>* {
+        padding: 2%;
+        border-radius: 15px;
+        color: #e2e2e2;
     }
 
     .choices aside {
