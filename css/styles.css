@@ -40,9 +40,9 @@ nav {
     width: 90%;
 }
 
-#logo {
-    font-family: 'Lora', serif;
-    font-size: 36px;
+#logo img {
+    max-width: 100%;
+    max-height: 80px;
 }
 
 #navlinks {
@@ -94,10 +94,29 @@ nav {
     margin-top: 80px;
 }
 
+#forside {
+    background-image: url("../img/forside-banner.jpg");
+}
+
+#kontakt {
+    background-image: url("../img/kontakt-banner.jpg");
+}
+
 .behandlingertop, .infotop, .omkringtop {
     display: flex;
     /* max-width: 1080px; */
     margin: 0 auto;
+}
+
+.omkringtop {
+    margin-top: 80px;
+}
+
+iframe {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 600px;
 }
 
 .behandlingertekst {
@@ -112,11 +131,6 @@ nav {
 }
 
 .omkringtekst {
-    width: 50%;
-    margin-top: 80px;
-    min-height: 500px;
-    background-color: #F5EDE9;
-    color: #5f443a;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -124,18 +138,22 @@ nav {
     font-weight: 700;
 }
 
-.behandlingertekst>*, .infotekst>*, .omkringtekst>* {
+.behandlingertekst>*, .infotekst>* {
     margin: 0 8%;
 }
 
-.behandlingerbanner, .omkringbanner {
+.behandlingerbanner {
     width: 50%;
-    background-position: center;
+    background-position: 100% 15%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../img/banner.jpg");
+    background-image: url("../img/behandlinger-banner.jpg");
     margin-top: 80px;
     min-height: 500px;
+}
+
+.behandlingerbanner:first-child {
+    display: none;
 }
 
 .infotekst {
@@ -153,7 +171,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../img/banner.jpg");
+    background-image: url("../img/hygge_stol.jpg");
     min-height: 400px;
 }
 
@@ -169,7 +187,7 @@ nav {
     font-size: 48px;
 }
 
-.divider h2 {
+.divider h2, .divider h3 {
     padding: 0;
 }
 
@@ -229,8 +247,14 @@ nav {
     display: flex;
 }
 
-.segment>* {
-    display: block;
+.segment>*, .introduction>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.segment p {
+    flex: auto;
 }
 
 h2 {
@@ -245,16 +269,8 @@ h3 {
     padding-bottom: 2%;
 }
 
-#middlechoice {
-    margin: 4% 0;
-}
-
 #priserdisclaimer {
     padding: 0 0 4%;
-    text-align: center;
-}
-
-#priser, #hover {
     text-align: center;
 }
 
@@ -273,12 +289,16 @@ h3 {
     font-size: 20px;
 }
 
+#priser, #hover {
+    text-align: center;
+}
+
 #hover aside {
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
-    background-image: url("../img/temp.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: left center;
     cursor: pointer;
     transition: all 0.4s ease;
     height: 200px;
@@ -288,6 +308,28 @@ h3 {
 #hover aside:hover {
     transform: scale(1.1);
     transition: all 0.4s ease;
+}
+
+.ompunkter aside:first-child {
+    background-image: url("../img/ambition.jpeg");
+}
+
+.ompunkter aside:nth-child(2) {
+    background-image: url("../img/styrke.jpg");
+}
+
+.ompunkter aside:last-child {
+    background-image: url("../img/motivation.png");
+}
+
+#hover h2 {
+    background-color: rgba(226, 226, 226, 0.8);
+    border-radius: 10px;
+    padding: 1%
+}
+
+#middlechoice {
+    margin: 4% 0;
 }
 
 .choices aside {
@@ -315,11 +357,12 @@ h3 {
 
 .border>aside {
     border: 1px solid #5f443a;
+    background-color: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
 }
 
-.notopspacing>aside {
-    margin-top: 0;
-    padding-top: 0;
+#behandlingerintro {
+    padding-bottom: 0;
 }
 
 .readmore {
@@ -330,19 +373,27 @@ h3 {
     padding-top: 2%;
 }
 
+.readmore:hover {
+    text-decoration: underline;
+}
+
 .introduction {
-    background-image: url("../img/banner.jpg");
-    height: 375px;
+    background-image: url("../img/forside-stinebache.jpg");
+    height: 500px;
     display: flex;
     justify-content: end;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .introduction aside {
     background-color: rgba(245, 237, 233, 0.80);
     width: 40%;
-    margin: 5% 7%;
     padding: 2%;
     margin-left: 0;
+    justify-content: center;
+    text-align: justify;
 }
 
 .buttons {
@@ -503,6 +554,10 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
+    iframe {
+        height: 400px;
+    }
+
     #navburger {
         display: flex;
         justify-content: center;
@@ -601,9 +656,46 @@ footer {
         padding: 6% 0;
     }
 
+    .behandlingerbanner {
+        margin-top: 80px;
+    }
+
+    .behandlingertekst {
+        margin-top: 0;
+    }
+
+    .behandlingerbanner:first-child {
+        display: block;
+    }
+
+    .behandlingerbanner:last-child {
+        display: none;
+    }
+
+    .behandlingertop, .infotop {
+        display: block;
+    }
+
+    .behandlingerbanner, .infobanner {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .behandlingertekst, .infotekst {
+        width: 100%;
+        min-height: 300px;
+    }
+
+    .behandlingertekst>*, .infotekst>* {
+        margin: 0 6%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
+    iframe {
+        height: 300px;
+    }
+
     .banner {
         background-attachment: inherit;
         min-height: 300px;
@@ -646,34 +738,6 @@ footer {
         display: inline-flex;
     }
 
-    .behandlingertop, .infotop, .omkringtop {
-        display: block;
-    }
-
-    .behandlingerbanner, .omkringbanner, .infobanner {
-        width: 100%;
-        min-height: 300px;
-    }
-
-    .omkringtekst {
-        width: 100%;
-        min-height: 100px;
-        margin: 0;
-        text-align: center;
-    }
-
-    .behandlingertekst, .infotekst {
-        width: 100%;
-        min-height: 300px;
-    }
-
-    .behandlingertekst>*, .infotekst>*, .omkringtekst>* {
-        margin: 0 6%;
-    }
-
-    .behandlingerbanner {
-        margin-top: 0;
-    }
 
     .introduction aside {
         background-color: inherit;
