@@ -93,6 +93,7 @@ nav {
     background-size: cover;
     min-height: 720px;
     margin-top: 80px;
+    background-position-y: 80px;
 }
 
 #forside {
