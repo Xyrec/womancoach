@@ -108,6 +108,11 @@ nav {
     background-image: url("../img/booking-banner.jpg");
 }
 
+#kvittering-banner {
+    background-image: url("../img/booking-banner.jpg");
+    min-height: 400px;
+}
+
 #priser-banner {
     background-image: url("../img/priser-banner.jpg");
 }
@@ -365,8 +370,8 @@ h3 {
     padding: 2%
 }
 
-#middlechoice {
-    margin: 4% 0;
+#hover aside:nth-child(2) {
+    margin: 0;
 }
 
 .choices aside {
@@ -536,11 +541,26 @@ h3 {
 #booking {
     margin: 0 auto;
     max-width: 1080px;
-    justify-content: space-evenly;
 }
 
 #booking section {
     padding-bottom: 2%;
+    margin: 0 auto;
+    width: 300px;
+    text-align: left;
+}
+
+#booking select {
+    border-radius: 10px;
+    border-style: none;
+    width: 310px;
+    padding: 5px;
+    margin: 2% 0;
+    height: 50px;
+    font-size: 18px;
+    color: #5F443A;
+    font-family: 'Lato', sans-serif;
+    background-color: #f8f8f8;
 }
 
 #booking aside {
@@ -550,45 +570,52 @@ h3 {
     margin: 0 2%;
 }
 
-#booking aside input {
+#booking input {
     border-radius: 10px;
     border-style: none;
-    width: 100%;
     width: 300px;
-    margin: 1% 0;
+    padding: 5px;
+    margin: 2% 0;
     height: 40px;
     font-size: 18px;
     color: #5F443A;
     font-family: 'Lato', sans-serif;
     background-color: #f8f8f8;
-    ;
 }
 
-#booking aside label {
+#booking label {
     font-size: 24px;
+    display: block;
 }
 
-#booking aside textarea {
+#booking textarea {
     border-radius: 10px;
     border-style: none;
     resize: none;
-    height: 182px;
+    height: 214px;
     width: 300px;
-    margin: 1% 0;
+    padding: 5px;
+    margin: 2% 0;
     font-size: 18px;
     color: #5F443A;
     font-family: 'Lato', sans-serif;
     background-color: #f8f8f8;
-    ;
 }
 
-#booking .btn {
+#booking textarea, #booking input {
+    outline: none;
+}
+
+#booking #btn {
     background-color: #8C6F66;
     color: #f8f8f8;
-    ;
+    font-size: 30px;
+    height: auto;
+    width: auto;
+    padding: 10px 40px 10px 40px;
 }
 
-#booking .btn:hover {
+#booking #btn:hover {
     background-color: #74584e;
 }
 
@@ -781,7 +808,7 @@ footer {
         width: 90%;
     }
 
-    #hover aside {
+    #hover aside, #hover aside:nth-child(2) {
         margin: 6%;
     }
 
@@ -844,6 +871,7 @@ footer {
     .banner {
         background-attachment: inherit;
         min-height: 300px;
+        background-position-y: 0;
     }
 
     .footercontent {
@@ -902,10 +930,6 @@ footer {
 
     .choices aside {
         margin: 4%;
-    }
-
-    #middlechoice {
-        margin: inherit;
     }
 
     #danskpsyk h2 {
