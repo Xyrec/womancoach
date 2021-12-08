@@ -41,8 +41,7 @@ nav {
 }
 
 #logo img {
-    max-width: 100%;
-    max-height: 70px;
+    height: 65px;
 }
 
 #navlinks {
@@ -68,18 +67,21 @@ nav {
 
 #navburger {
     display: none;
-    height: 66px;
-    width: 50px;
 }
 
-.burgerline {
-    height: 4px;
-    background-color: #5F443A;
-    margin-top: 8px;
+#burgermenu a {
+    font-size: 20px;
+    color: #5f443a;
+    text-decoration: none;
 }
 
-.burgerline:first-child {
-    margin-top: 0;
+#burgermenu li {
+    padding: 4%;
+    border-top: 1px solid #5f443a;
+}
+
+#burgermenu {
+    display: none;
 }
 
 .banner {
@@ -322,14 +324,14 @@ h3 {
     background-repeat: no-repeat;
     background-position: left center;
     cursor: pointer;
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
     height: 200px;
     margin-top: 0;
 }
 
 #hover aside:hover {
     transform: scale(1.1);
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
 }
 
 .ompunkter aside:first-child {
@@ -359,7 +361,7 @@ h3 {
 #hover h2 {
     background-color: rgba(226, 226, 226, 0.8);
     border-radius: 10px;
-    padding: 1%
+    padding: 2%
 }
 
 #middlechoice {
@@ -521,7 +523,6 @@ h3 {
     background-position: center;
     background-repeat: no-repeat;
     background-color: #f8f8f8;
-    ;
     border-radius: 30px;
     height: 60px;
     width: 60px;
@@ -537,10 +538,15 @@ h3 {
     justify-content: space-evenly;
 }
 
+#booking section {
+    padding-bottom: 2%;
+}
+
 #booking aside {
     text-align: start;
     flex-direction: column;
     display: inline-flex;
+    margin: 0 2%;
 }
 
 #booking aside input {
@@ -658,7 +664,48 @@ footer {
     #navburger {
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        align-items: center;
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+    }
+
+    .navburger-btn {
+        width: 50px;
+        height: 5px;
+        background: #5F443A;
+        border-radius: 2px;
+        transition: all .25s ease-in-out;
+    }
+
+    .navburger-btn::before, .navburger-btn::after {
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 5px;
+        background: #5F443A;
+        border-radius: 2px;
+        transition: all .25s ease-in-out;
+    }
+
+    .navburger-btn::before {
+        transform: translateY(-12px);
+    }
+
+    .navburger-btn::after {
+        transform: translateY(12px);
+    }
+
+    #navburger.open .navburger-btn {
+        background: transparent;
+    }
+
+    #navburger.open .navburger-btn::before {
+        transform: rotate(45deg);
+    }
+
+    #navburger.open .navburger-btn::after {
+        transform: rotate(-45deg);
     }
 
     .footertop {

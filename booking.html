@@ -27,27 +27,48 @@
                 <li><a href="booking.html">Booking</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
-            <a href="#dropdown">
-                <div id="navburger">
-                    <div class="burgerline"></div>
-                    <div class="burgerline"></div>
-                    <div class="burgerline"></div>
-                </div>
-            </a>
+            <div id="navburger">
+                <div class="navburger-btn"></div>
+            </div>
+        </div>
+        <div id="burgermenu">
+            <ul>
+                <a href="hvemerjeg.html">
+                    <li>Hvem er jeg?</li>
+                </a>
+                <a href="behandlinger.html">
+                    <li>Behandlinger</li>
+                </a>
+                <a href="priser.html">
+                    <li>Priser</li>
+                </a>
+                <a href="booking.html">
+                    <li>Booking</li>
+                </a>
+                <a href="kontakt.html">
+                    <li>Kontakt</li>
+                </a>
+            </ul>
         </div>
     </nav>
     <section class="banner" id="booking-banner"></section>
     <header class="divider header">
-        <h1>Book din næste samtale</h1>
+        <h1>Book din næste konsultation</h1>
     </header>
     <main>
         <section class="centercontent">
             <h2>Klar til at finde vejen til en bedre hverdag?</h2>
-            <p>Book en tid og lad mig hjælpe dig i mål - vælg blot en dato og et klokkeslæt, så kontakter jeg dig
+            <p>Book en tid og lad mig hjælpe dig i mål - vælg den dato og klokkeslæt der passer dig bedst, så kontakter
+                jeg dig
                 snarest muligt, så vi kan få aftalt det endelige tidspunkt.</p>
         </section>
         <section class="altcolor">
             <form id="booking">
+                <section>
+                    <h2>Oplysninger</h2>
+                    <label for="bookingDate">Vælg din dato:</label>
+                    <input id="bookingDate" type="date" required />
+                </section>
                 <aside>
                     <label for="bookingName">Navn</label>
                     <input id="bookingName" type="text" required />
@@ -90,6 +111,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/javascript.js"></script>
 </body>
 
 </html>
