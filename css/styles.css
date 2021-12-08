@@ -20,7 +20,7 @@ p {
 }
 
 nav {
-    background-color: #feeee9;
+    background-color: #F5EDE9;
     position: fixed;
     top: 0;
     width: 100%;
@@ -73,7 +73,7 @@ nav {
 }
 
 .burgerline {
-    height: 6px;
+    height: 4px;
     background-color: #5F443A;
     margin-top: 8px;
 }
@@ -89,8 +89,7 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../img/banner.jpg");
-    min-height: 600px;
+    min-height: 720px;
     margin-top: 80px;
 }
 
@@ -104,6 +103,18 @@ nav {
 
 #booking-banner {
     background-image: url("../img/booking-banner.jpg");
+}
+
+#priser-banner {
+    background-image: url("../img/priser-banner.jpg");
+}
+
+#psykoterapi {
+    background-image: url("../img/psykoterapi.jpg");
+}
+
+#stresscoaching {
+    background-image: url("../img/stresscoaching-banner.jpg");
 }
 
 .behandlingertop, .infotop, .omkringtop {
@@ -120,13 +131,13 @@ iframe {
     margin: 0 auto;
     display: block;
     width: 100%;
-    height: 600px;
+    height: 720px;
 }
 
 .behandlingertekst {
     width: 50%;
     margin-top: 80px;
-    min-height: 500px;
+    min-height: 600px;
     background-color: #8C6F66;
     color: #e2e2e2;
     display: flex;
@@ -153,21 +164,26 @@ iframe {
     background-size: cover;
     background-image: url("../img/behandlinger-banner.jpg");
     margin-top: 80px;
-    min-height: 500px;
+    min-height: 600px;
 }
 
-.behandlingerbanner:first-child {
+.behandlingerbanner:first-child, .infobanner:first-child {
     display: none;
 }
 
 .infotekst {
     width: 50%;
-    min-height: 400px;
+    margin-top: 80px;
+    min-height: 600px;
     background-color: #8C6F66;
     color: #e2e2e2;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+
+.infotekst span {
+    font-size: 20px;
 }
 
 .infobanner {
@@ -176,7 +192,8 @@ iframe {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("../img/hygge_stol.jpg");
-    min-height: 400px;
+    margin-top: 80px;
+    min-height: 600px;
 }
 
 .divider {
@@ -215,7 +232,7 @@ iframe {
 }
 
 #danskpsykcontent p {
-    font-size: 24px;
+    font-size: 20px;
     padding: 2% 0;
     text-align: center;
     width: 75%;
@@ -228,7 +245,7 @@ iframe {
 }
 
 .lektioner {
-    font-size: 24px;
+    font-size: 20px;
     padding: 2% 0;
     text-align: center;
     margin: 0 auto;
@@ -283,6 +300,7 @@ h3 {
     padding: 6% 2%;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    border: 1px solid #5f443a;
 }
 
 #priser aside>* {
@@ -326,6 +344,18 @@ h3 {
     background-image: url("../img/motivation.png");
 }
 
+.kontaktpunkter aside:first-child {
+    background-image: url("../img/kontakt-banner.jpg");
+}
+
+.kontaktpunkter aside:nth-child(2) {
+    background-image: url("../img/walkandtalk.jpg");
+}
+
+.kontaktpunkter aside:last-child {
+    background-image: url("../img/online.jpg");
+}
+
 #hover h2 {
     background-color: rgba(226, 226, 226, 0.8);
     border-radius: 10px;
@@ -360,9 +390,10 @@ h3 {
 }
 
 .border>aside {
-    border: 1px solid #5f443a;
+    /* border: 1px solid #5f443a; */
     background-color: #f8f8f8;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
 }
 
 #behandlingerintro {
@@ -408,6 +439,15 @@ h3 {
     padding: 2%;
 }
 
+.dividercontent span {
+    font-style: italic;
+}
+
+.dividercontent p {
+    font-size: 18px;
+    padding-top: 1%;
+}
+
 .centercontent {
     width: 60%;
     margin: 0 auto;
@@ -416,6 +456,29 @@ h3 {
 
 .centercontent h2 {
     text-align: center;
+}
+
+.centercontent p {
+    padding-bottom: 2%;
+}
+
+.centercontent ul {
+    padding-bottom: 2%;
+}
+
+.centercontent li {
+    list-style: disc;
+    list-style-position: inside;
+    font-weight: 700;
+    padding-bottom: 1%;
+}
+
+.centercontent li span {
+    font-weight: 400;
+}
+
+.centercontent span {
+    font-style: italic;
 }
 
 .altcolor {
@@ -441,8 +504,9 @@ h3 {
 }
 
 .erfaringtekst {
-    background-color: #E2E2E2;
-    border-radius: 15px;
+    background-color: #f8f8f8;
+    ;
+    border-radius: 10px;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
 }
@@ -456,7 +520,8 @@ h3 {
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #e2e2e2;
+    background-color: #f8f8f8;
+    ;
     border-radius: 30px;
     height: 60px;
     width: 60px;
@@ -479,6 +544,8 @@ h3 {
 }
 
 #booking aside input {
+    border-radius: 10px;
+    border-style: none;
     width: 100%;
     width: 300px;
     margin: 1% 0;
@@ -486,6 +553,8 @@ h3 {
     font-size: 18px;
     color: #5F443A;
     font-family: 'Lato', sans-serif;
+    background-color: #f8f8f8;
+    ;
 }
 
 #booking aside label {
@@ -493,18 +562,23 @@ h3 {
 }
 
 #booking aside textarea {
+    border-radius: 10px;
+    border-style: none;
     resize: none;
-    height: 191px;
+    height: 182px;
     width: 300px;
     margin: 1% 0;
     font-size: 18px;
     color: #5F443A;
     font-family: 'Lato', sans-serif;
+    background-color: #f8f8f8;
+    ;
 }
 
 #booking .btn {
     background-color: #8C6F66;
-    color: #e2e2e2;
+    color: #f8f8f8;
+    ;
 }
 
 #booking .btn:hover {
@@ -557,6 +631,10 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-top: 1%;
+}
+
+.footermiddle p:nth-child(2) {
+    text-align: center;
 }
 
 .footertop p:last-child, .footermiddle p:last-child {
@@ -675,19 +753,19 @@ footer {
         padding: 6% 0;
     }
 
-    .behandlingerbanner {
+    .behandlingerbanner, .infobanner {
         margin-top: 80px;
     }
 
-    .behandlingertekst {
+    .behandlingertekst, .infotekst {
         margin-top: 0;
     }
 
-    .behandlingerbanner:first-child {
+    .behandlingerbanner:first-child, .infobanner:first-child {
         display: block;
     }
 
-    .behandlingerbanner:last-child {
+    .behandlingerbanner:last-child, .infobanner:last-child {
         display: none;
     }
 
@@ -770,7 +848,7 @@ footer {
 
     .introduction aside>* {
         padding: 2%;
-        border-radius: 15px;
+        background-color: #00000050;
         color: #e2e2e2;
     }
 
