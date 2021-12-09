@@ -307,6 +307,10 @@ h3 {
     text-align: center;
 }
 
+#middlechoice {
+    margin: 4% 0;
+}
+
 #priser aside {
     background-color: #D9CEC3;
     padding: 6% 2%;

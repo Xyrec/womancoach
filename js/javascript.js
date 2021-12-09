@@ -5,7 +5,6 @@ const burgermenu = document.getElementById('burgermenu');
 
 // Declare "burgermenuOpen" til at være false
 let burgermenuOpen = false;
-console.log(!burgermenuOpen)
 
 // Hvis der trykkes på "burgerbtn" (constant vi satte tidligere)
 burgerbtn.addEventListener("click", function (event) {
@@ -83,15 +82,12 @@ const boxContainer = document.getElementById("boxContainer");
 // Tjek om knapperne på Kontakt siden eksisterer
 if (knapHosMig && knapWalkandTalk && knapOnline) {
     knapHosMig.addEventListener("click", function () {
-        // console.log('hos mig');
         vindueTekst('hosmig'); // Kalder funktionen vindueTekst med hvilken box der er trykket på
     })
     knapWalkandTalk.addEventListener("click", function () {
-        // console.log('walk and talk');
         vindueTekst('walkandtalk'); // Kalder funktionen vindueTekst med hvilken box der er trykket på
     })
     knapOnline.addEventListener("click", function () {
-        // console.log('online');
         vindueTekst('online'); // Kalder funktionen vindueTekst med hvilken box der er trykket på
     })
 }
@@ -99,15 +95,12 @@ if (knapHosMig && knapWalkandTalk && knapOnline) {
 // Tjek som knapperne på Hvem er jeg? siden eksisterer
 if (knapAmbition && knapStyrker && knapMotivation) {
     knapAmbition.addEventListener("click", function () {
-        // console.log('ambition');
         vindueTekst('ambition'); // Kalder funktionen vindueTekst med hvilken box der er trykket på
     })
     knapStyrker.addEventListener("click", function () {
-        // console.log('styrker');
         vindueTekst('styrker'); // Kalder funktionen vindueTekst med hvilken box der er trykket på
     })
     knapMotivation.addEventListener("click", function () {
-        // console.log('motivation');
         vindueTekst('motivation'); // Kalder funktionen vindueTekst med hvilken box der er trykket på
     })
 }
@@ -116,7 +109,7 @@ function vindueTekst(boxvalg) {
     // Deklarerer og "nulstiller" overskrift og tekst, så vi kan sætte tekst i dem senere
     let overskrift = "";
     let tekst = "";
-    console.log("before: "+overskrift+tekst);
+
     switch (boxvalg) {  // Switch-case der tjekker hvilken tekst der er sendt i funktion parametret
         // Hver case indsætter relevant tekst ind i "overskrift" og "tekst" fra før
         case 'hosmig':
@@ -155,13 +148,18 @@ function vindueTekst(boxvalg) {
     boxContainer.style.display = "block";
 }
 
-// Hvis der trykkes på boxClose (luk knappen)
-boxClose.addEventListener("click", function (event) {
-    event.preventDefault(); // Ignorer den event der normalt vil ske, og i stedet...
+// Hvis et element med ID boxClose eksisterer, så
+if (boxClose) {
+    // Hvis der trykkes på boxClose (luk knappen)
+    boxClose.addEventListener("click", function (event) {
+        event.preventDefault(); // Ignorer den event der normalt vil ske, og i stedet...
 
-    // Skjuler (lukker) pop-up kassen
-    boxContainer.style.display = "none";
-})
+        // Skjuler (lukker) pop-up kassen
+        boxContainer.style.display = "none";
+    })
+}
+
+
 
 // Tjek om JavaScript loader (besked dukker ikke op hvis der er sket en fejl!)
 console.log("Javascript loader korrekt");
