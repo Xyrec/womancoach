@@ -443,6 +443,10 @@ h3 {
     text-align: justify;
 }
 
+.introduction p {
+    line-height: 150%;
+}
+
 .buttons {
     padding: 3% 0 1%;
 }
@@ -973,7 +977,10 @@ footer {
         margin: 0;
         padding: 6%;
         justify-content: end;
+    }
 
+    .introduction p {
+        line-height: 120%;
     }
 
     .introduction aside>* {
